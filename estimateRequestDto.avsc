@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "name": "Transaction",
+  "namespace": "com.example",
+  "fields": [
+    { "name": "amount", "type": { "type": "bytes", "logicalType": "decimal", "precision": 10, "scale": 2 } },
+    { "name": "currency", "type": "string" },
+    { "name": "merchantId", "type": "string" },
+    { "name": "userId", "type": "string" }
+  ]
+}
