@@ -1,7 +1,7 @@
 {
+  "namespace": "com.switchwon.avro",
   "type": "record",
-  "name": "Transaction",
-  "namespace": "com.example",
+  "name": "EstimateRequestDto",
   "fields": [
     { "name": "amount", "type": { "type": "bytes", "logicalType": "decimal", "precision": 10, "scale": 2 } },
     { "name": "currency", "type": "string" },
