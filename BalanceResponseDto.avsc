@@ -1,0 +1,10 @@
+{
+  "type": "record",
+  "name": "BalanceResponseDto",
+  "namespace": "com.switchwon.avro.response",
+  "fields": [
+    {"name": "userId", "type": "string"},
+    {"name": "balance", "type": "double"},
+    {"name": "currency", "type": "string"}
+  ]
+}

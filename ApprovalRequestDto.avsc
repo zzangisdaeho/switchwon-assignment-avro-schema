@@ -1,0 +1,24 @@
+{
+  "type": "record",
+  "name": "ApprovalRequestDto",
+  "namespace": "com.switchwon.avro.request",
+  "fields": [
+    {"name": "userId", "type": "string"},
+    {"name": "amount", "type": "double"},
+    {"name": "currency", "type": "string"},
+    {"name": "merchantId", "type": "string"},
+    {"name": "paymentMethod", "type": "string"},
+    {
+      "name": "paymentDetails",
+      "type": {
+        "type": "record",
+        "name": "PaymentDetails",
+        "fields": [
+          {"name": "cardNumber", "type": "string"},
+          {"name": "expiryDate", "type": "string"},
+          {"name": "cvv", "type": "string"}
+        ]
+      }
+    }
+  ]
+}

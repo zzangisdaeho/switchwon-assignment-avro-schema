@@ -1,0 +1,10 @@
+{
+  "type": "record",
+  "name": "EstimateResponseDto",
+  "namespace": "com.switchwon.avro.response",
+  "fields": [
+    {"name": "estimatedTotal", "type": "double"},
+    {"name": "fees", "type": "double"},
+    {"name": "currency", "type": "string"}
+  ]
+}

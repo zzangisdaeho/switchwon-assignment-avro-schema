@@ -1,5 +1,5 @@
 {
-  "namespace": "com.switchwon.avro",
+  "namespace": "com.switchwon.avro.request",
   "type": "record",
   "name": "EstimateRequestDto",
   "fields": [

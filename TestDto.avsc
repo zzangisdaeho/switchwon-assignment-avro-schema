@@ -1,9 +1,0 @@
-{
-  "namespace": "com.switchwon.avro",
-  "type": "record",
-  "name": "TestDto",
-  "fields": [
-    {"name": "name", "type": "string"},
-    {"name": "age",  "type": "int"}
-  ]
-}

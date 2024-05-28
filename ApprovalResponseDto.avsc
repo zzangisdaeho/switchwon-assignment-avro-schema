@@ -1,0 +1,12 @@
+{
+  "type": "record",
+  "name": "ApprovalResponseDto",
+  "namespace": "com.switchwon.avro.response",
+  "fields": [
+    {"name": "paymentId", "type": "string"},
+    {"name": "status", "type": "string"},
+    {"name": "amountTotal", "type": "double"},
+    {"name": "currency", "type": "string"},
+    {"name": "timestamp", "type": "string", "logicalType": "timestamp-millis"}
+  ]
+}
