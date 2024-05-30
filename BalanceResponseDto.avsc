@@ -3,8 +3,29 @@
   "name": "BalanceResponseDto",
   "namespace": "com.switchwon.avro.response",
   "fields": [
-    {"name": "userId", "type": "string"},
-    {"name": "balance", "type": "double"},
-    {"name": "currency", "type": "string"}
+    {
+      "name": "userId",
+      "type": "string"
+    },
+    {
+      "name": "balances",
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "record",
+          "name": "Balance",
+          "fields": [
+            {
+              "name": "balance",
+              "type": "double"
+            },
+            {
+              "name": "currency",
+              "type": "string"
+            }
+          ]
+        }
+      }
+    }
   ]
 }
