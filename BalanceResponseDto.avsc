@@ -26,11 +26,7 @@
             },
             {
               "name": "currency",
-              "type": {
-                "type": "enum",
-                "name": "Currency",
-                "symbols": ["USD", "KRW"]
-              }
+              "type": "string"
             }
           ]
         }
