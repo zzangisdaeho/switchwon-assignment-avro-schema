@@ -3,8 +3,22 @@
   "name": "EstimateResponseDto",
   "namespace": "com.switchwon.avro.response",
   "fields": [
-    {"name": "estimatedTotal", "type": "double"},
-    {"name": "fees", "type": "double"},
-    {"name": "currency", "type": "string"}
+    {
+      "name": "estimatedTotal",
+      "type": "double"
+    },
+    {
+      "name": "fees",
+      "type": {
+        "type": "bytes",
+        "logicalType": "decimal",
+        "precision": 10,
+        "scale": 2
+      }
+    },
+    {
+      "name": "currency",
+      "type": "string"
+    }
   ]
 }
