@@ -4,7 +4,7 @@
   "namespace": "com.switchwon.avro.request",
   "fields": [
     {"name": "userId", "type": "string"},
-    {"name": "amount", "type": "double"},
+    {"name": "amount", "type": { "type": "bytes", "logicalType": "decimal", "precision": 10, "scale": 2 }},
     {"name": "currency", "type": "string"},
     {"name": "merchantId", "type": "string"},
     {"name": "paymentMethod", "type": "string"},
