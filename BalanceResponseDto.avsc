@@ -11,7 +11,25 @@
       "name": "balances",
       "type": {
         "type": "array",
-        "items": "com.switchwon.avro.response.BalanceDto"
+        "items": {
+          "type": "record",
+          "name": "BalanceDto",
+          "fields": [
+            {
+              "name": "balance",
+              "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 10,
+                "scale": 2  // 기본적으로 USD의 소수점 자릿수 설정
+              }
+            },
+            {
+              "name": "currency",
+              "type": "string"
+            }
+          ]
+        }
       }
     }
   ]
